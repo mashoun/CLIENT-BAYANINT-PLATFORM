@@ -1,0 +1,10 @@
+{
+  "name": "My Account",
+  "short_name": "My Account",
+  "theme_color": "#00b4d8",
+  "background_color": "#edf6f9",
+  "display": "standalone",
+  "orientation": "portrait",
+  "scope": "/",
+  "start_url": "/"
+}
