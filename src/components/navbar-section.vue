@@ -5,8 +5,10 @@
             <div>
                 <!-- <h5 class="text-primary fs-5">{{store.userAccount.profile.firstName}} {{store.userAccount.profile.lastName}}</h5> -->
                 <!-- <h5 class="text-uppercase">{{store.userAccount.profile.domain}}</h5> -->
-                <img v-if="store.userAccount.profile.domain == 'ssplatform'" src="https://drive.google.com/uc?id=1OqP0A5Iqrrh3S23QIhoDmRQnPAQoG4d-" alt="ssplatform logo" width="100" class="img-fluid skeleton">
-                <img v-else src="https://drive.google.com/uc?id=1xtGz7iKGyoXdj4ywuJOWAyn-lWVUCMjC" alt="bayan logo" width="80" class="img-fluid skeleton">
+                <img src="https://drive.google.com/uc?id=1dobFuJjbKxiq2ORisNH5XVXm9Qx-6JUJ" alt="logo" class="img-fluid rounded-circle skeleton" width="70">
+                <img v-if="store.userAccount.profile.domain == 'ssplatform'" src="https://drive.google.com/uc?id=1OqP0A5Iqrrh3S23QIhoDmRQnPAQoG4d-" alt="ssplatform logo" width="70" class="img-fluid skeleton">
+                <img v-if="store.userAccount.profile.domain == 'ssplatform'" src="https://drive.google.com/uc?id=1WvMZnnieyKekQSXKgu6t1zY2QWuNqxDI" alt="RedSeaUni Logo" width="70" class="img-fluid skeleton">
+                <img v-else src="https://drive.google.com/uc?id=1xtGz7iKGyoXdj4ywuJOWAyn-lWVUCMjC" alt="bayan logo" width="70" class="img-fluid skeleton">
             </div>
         </section>
         <nav>
