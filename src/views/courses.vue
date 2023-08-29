@@ -66,7 +66,7 @@ export default {
       this.store.userAccount.courses.forEach(c => {
         arr.push(c.semester)
       })
-      console.log(arr);
+      // console.log(arr);
       return Array.from(new Set(arr))
     }
   },
@@ -78,7 +78,7 @@ export default {
     }
   },
   mounted(){
-    console.log(this.getLetterGrade('51'));
+    // console.log(this.getLetterGrade('51'));
   }
 }
 </script>
