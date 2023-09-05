@@ -5,7 +5,7 @@
             <h4 class="text-secondary">Check out the courses you are currently enrolled in.</h4>
         </div>
         <div class="col-12 col-lg-4">
-          <select class="form-select" v-model="semesterTab">
+          <select class="form-select" v-model="store.semesterTab">
             <option v-for="s in getSemesters()" :key="s" :value="s">{{s}}</option>
           </select>
         </div>
@@ -41,11 +41,6 @@ export default {
     const store = useStore();
     return { store };
   },
-  data(){
-    return{
-      semesterTab : "Semester 1"
-    }
-  },
   methods:{
     getLetterGrade(scoreString) {
       const score = parseFloat(scoreString);
@@ -63,22 +58,31 @@ export default {
     },
     getSemesters(){
       var arr = []
-      this.store.userAccount.courses.forEach(c => {
-        arr.push(c.semester)
-      })
+      // this.store.userAccount.courses.forEach(c => {
+      //   arr.push(c.semester)
+      // })
       // console.log(arr);
+      for(let c of this.store.userAccount.courses){
+        // console.log(c.semester);
+        arr.push(c.semester)
+      }
       return Array.from(new Set(arr))
     }
   },
   computed:{
     coursesBySemester(){
+
       return this.store.userAccount.courses.filter(c => {
-        return c.semester == this.semesterTab
+        return c.semester == this.store.semesterTab
+        
       })
     }
   },
   mounted(){
     // console.log(this.getLetterGrade('51'));
+    // this.store.semesterTab = this.getSemesters()[0]
+    // console.log(this.getSemesters());
+
   }
 }
 </script>

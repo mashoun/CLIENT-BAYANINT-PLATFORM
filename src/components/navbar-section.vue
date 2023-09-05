@@ -15,10 +15,11 @@
         </section>
         <nav>
             <div class="d-none d-lg-flex gap-3 align-items-center">
-                <a class="no-decoration" :href="store.userAccount.about">About</a>
+                <a class="no-decoration" :href="store.userAccount.about" target="_self">About</a>
                 <router-link class="no-decoration" to="/profile">Profile</router-link>
                 <router-link class="no-decoration" to="/courses">Courses</router-link>
-                <a class="no-decoration" :href="store.userAccount.library">Library</a>
+                <a class="no-decoration" :href="store.userAccount.library" target="blank">Library</a>
+                <a class="no-decoration" :href="store.userAccount.schedule">Schedule</a>
                 <a class="no-decoration" href="mailto:info@bayanint.com?subject=Feedback">Feedbacks</a>
 
             </div>

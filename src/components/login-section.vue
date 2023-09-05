@@ -18,7 +18,7 @@
                             <span v-if="!spinner">Login</span>
                             <span v-else class="spinner-grow spinner-grow-sm"></span>
                         </button>
-                        <small class="fs-x-small text-secondary ">Last update 2023-8-28</small>
+                        <small class="fs-x-small text-secondary ">Last update 2023-9-5</small>
                     </aside>
                 </div>
             </div>
@@ -67,6 +67,7 @@ export default {
                     this.store.userAccount = res
                     this.spinner = false
                     this.store.isLogedIn = true
+                    this.store.semesterTab = this.getSemesters()[0]
                 }
             })
             .catch(err => {
@@ -74,6 +75,19 @@ export default {
                 this.spinner = false
             })
 
+        },
+        
+        getSemesters(){
+            var arr = []
+            // this.store.userAccount.courses.forEach(c => {
+            //   arr.push(c.semester)
+            // })
+            // console.log(arr);
+            for(let c of this.store.userAccount.courses){
+                // console.log(c.semester);
+                arr.push(c.semester)
+            }
+            return Array.from(new Set(arr))
         }
     }
 }

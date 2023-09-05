@@ -6,6 +6,7 @@ export const useStore = defineStore('store', {
         userID: '',
         UserPassword: '',
         isLogedIn: false,
+        semesterTab:'',
 
         userAccount: {
             "profile": {
@@ -104,7 +105,7 @@ export const useStore = defineStore('store', {
     actions: {
 
         getApi() {
-            return 'https://script.google.com/macros/s/AKfycbz0El0NBMurxjSYSc3CUspuEH4Hn6JgdWItnqNoFc8kK-UvxqVNFMbFsmUsa5DTt7Z6/exec'
+            return 'https://script.google.com/macros/s/AKfycby7JpbAxU1D0yI3IbsmjZuJQ3x1gY9mzRIJUAzdBEy6sa7hsa7pRwUATKcBG1-Ub-fp/exec'
         },
 
     }
