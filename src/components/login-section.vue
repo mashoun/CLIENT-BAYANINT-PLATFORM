@@ -18,7 +18,7 @@
                             <span v-if="!spinner">Login</span>
                             <span v-else class="spinner-grow spinner-grow-sm"></span>
                         </button>
-                        <small class="fs-x-small text-secondary ">Last update 2023-9-5</small>
+                        <small class="fs-x-small text-secondary ">Last update 2023-9-17 version 1.2.2</small>
                     </aside>
                 </div>
             </div>

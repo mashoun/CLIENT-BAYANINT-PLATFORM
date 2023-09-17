@@ -20,7 +20,7 @@
                 <router-link class="no-decoration" to="/courses">Courses</router-link>
                 <a class="no-decoration" :href="store.userAccount.library" target="blank">Library</a>
                 <a class="no-decoration" :href="store.userAccount.schedule">Schedule</a>
-                <a class="no-decoration" href="mailto:info@bayanint.com?subject=Feedback">Feedbacks</a>
+                <a class="no-decoration" :href="feedbacks">Feedbacks</a>
 
             </div>
             <i class="d-block d-lg-none bi bi-three-dots-vertical fs-3 text-secondary" data-bs-toggle="dropdown"></i>
@@ -29,7 +29,8 @@
                 <li class="dropdown-item"><router-link class="no-decoration" to="/profile">Profile</router-link></li>
                 <li class="dropdown-item"><router-link class="no-decoration" to="/courses">Courses</router-link></li>
                 <li class="dropdown-item"><a class="no-decoration" :href="store.userAccount.library">Library</a></li>
-                <li class="dropdown-item"><a class="no-decoration" href="mailto:info@bayanint.com?subject=Feedback">Feedbacks</a></li>
+                <li class="dropdown-item"><a class="no-decoration" :href="store.userAccount.schedule">schedule</a></li>
+                <li class="dropdown-item"><a class="no-decoration" :href="feedbacks">Feedbacks</a></li>
                 <li><hr class="dropdown-divider"></li>
                 <li class="dropdown-item text-danger" @click="logOut">Logout</li>
             </ul>
@@ -44,6 +45,11 @@ export default {
   setup() {
     const store = useStore();
     return { store };
+  },
+  computed:{
+    feedbacks(){
+        return this.store.userAccount.profile.domain == 'ssplatform' ? 'mailto:aali@iaula.edu?subject=Feedback' : 'mailto:info@bayanint.com?subject=Feedback'
+    }
   },
   methods:{
     logOut(){
