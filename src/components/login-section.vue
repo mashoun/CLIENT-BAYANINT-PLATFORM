@@ -4,8 +4,8 @@
             <div class="row justify-content-center">
                 <div class="col-12 col-lg-6">
                     <aside class="p-3 bg-light shadow rounded d-flex flex-column gap-3 align-items-center text-center">
-                        <!-- <i class="bi bi-person-circle fs-1 text-secondary"></i> -->
-                        <img src="https://drive.google.com/uc?id=1Q9qlpoa5O39s2xxnQE6NkcOlAtN2SXlh" alt="logo" class="skeleton img-fluid rounded-circle" width="100">
+                        <!-- <i src='https://drive.google.com/uc?id=1Q9qlpoa5O39s2xxnQE6NkcOlAtN2SXlh' class="bi bi-person-circle fs-1 text-secondary"></i> -->
+                        <img src="/public/iau.png" alt="logo" class="skeleton img-fluid rounded-circle" width="100">
                         <!-- <h5 class="text-primary fs-5">Bayan International Group</h5> -->
                         <blockquote class="fs-6 text-secondary">
                             <!-- <i class="bi bi-quote text-warning fs-4"></i> -->
@@ -18,7 +18,7 @@
                             <span v-if="!spinner">Login</span>
                             <span v-else class="spinner-grow spinner-grow-sm"></span>
                         </button>
-                        <small class="fs-x-small text-secondary ">Last update 2023-9-17 version 1.2.2</small>
+                        <small class="fs-x-small text-secondary ">Last update 2023-9-17 version 1.3.0</small>
                     </aside>
                 </div>
             </div>

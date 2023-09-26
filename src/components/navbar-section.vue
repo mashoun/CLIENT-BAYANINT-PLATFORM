@@ -6,10 +6,10 @@
                 
                 <!-- <h5 class="text-primary fs-5">{{store.userAccount.profile.firstName}} {{store.userAccount.profile.lastName}}</h5> -->
                 <!-- <h5 class="text-uppercase">{{store.userAccount.profile.domain}}</h5> -->
-                <img src="https://drive.google.com/uc?id=1Q9qlpoa5O39s2xxnQE6NkcOlAtN2SXlh" alt="logo" class="img-fluid rounded-circle skeleton" width="70">
-                <img v-if="store.userAccount.profile.domain == 'ssplatform'" src="https://drive.google.com/uc?id=1GCHD4fxvjCBmXwwlBgsTjKoHmpy42gNv" alt="ssplatform logo" width="70" class="img-fluid skeleton">
-                <img v-if="store.userAccount.profile.domain == 'ssplatform'" src="https://drive.google.com/uc?id=1FwIugyD9w5zCGujcw5VTXuKgrxrerD-F" alt="RedSeaUni Logo" width="70" class="img-fluid skeleton">
-                <img v-else src="https://drive.google.com/uc?id=14PoYFmtQNXBWcTSiynrCARf5fXxZ2IdU" alt="bayan logo" width="70" class="img-fluid skeleton">
+                <img src="/public/iau.png" alt="logo" class="img-fluid rounded-circle skeleton" width="70">
+                <img v-if="store.userAccount.profile.domain == 'ssplatform'" src="/ssplatform.png" alt="ssplatform logo" width="70" class="img-fluid skeleton">
+                <img v-if="store.userAccount.profile.domain == 'ssplatform'" src="/redsea.png" alt="RedSeaUni Logo" width="70" class="img-fluid skeleton">
+                <img v-else src="/public/bayan.png" alt="bayan logo" width="70" class="img-fluid skeleton">
             
             </div>
         </section>
